@@ -457,49 +457,49 @@
                 </h2>
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <img src="3" alt="Именниник">
+                        <img src="3.jpg" alt="Именниник">
                         <div class="overlay">
                             <i class="fas fa-heart"></i> Именниник
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="5" alt="Вместе">
+                        <img src="5.jpg" alt="Вместе">
                         <div class="overlay">
                             <i class="fas fa-heart"></i> Вместе
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="7" alt="Наше место">
+                        <img src="7.jpg" alt="Наше место">
                         <div class="overlay">
                             <i class="fas fa-heart"></i> Наше место
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="4" alt="Крайняя">
+                        <img src="4.jpg" alt="Крайняя">
                         <div class="overlay">
                             <i class="fas fa-heart"></i> Крайняя
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="1" alt="Чемпион">
+                        <img src="1.jpg" alt="Чемпион">
                         <div class="overlay">
                             <i class="fas fa-heart"></i> Чемпион
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="9" alt="Счастливы">
+                        <img src="9.jpg" alt="Счастливы">
                         <div class="overlay">
                             <i class="fas fa-heart"></i> Счастливы
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="2" alt="Поцелуй">
+                        <img src="2.jpg" alt="Поцелуй">
                         <div class="overlay">
                             <i class="fas fa-heart"></i> Поцелуй
                         </div>
                     </div>
                     <div class="gallery-item">
-                        <img src="6" alt="Мой милашка">
+                        <img src="6.jpg" alt="Мой милашка">
                         <div class="overlay">
                             <i class="fas fa-heart"></i> Мой милашка
                         </div>
