@@ -457,9 +457,9 @@
                 </h2>
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <img src="3.jpg" alt="Именниник">
+                        <img src="3.jpg" alt="Именинник">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Именниник
+                            <i class="fas fa-heart"></i> Именинник
                         </div>
                     </div>
                     <div class="gallery-item">
