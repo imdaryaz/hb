@@ -18,7 +18,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px;
+            padding: 8px;
             position: relative;
             overflow-x: hidden;
         }
@@ -50,7 +50,7 @@
             max-width: 100%;
             background: rgba(255, 245, 250, 0.97);
             backdrop-filter: blur(8px);
-            border-radius: 40px;
+            border-radius: 30px;
             box-shadow: 0 30px 60px rgba(255, 105, 180, 0.25);
             overflow: hidden;
             position: relative;
@@ -75,7 +75,7 @@
             box-shadow: 0 8px 20px rgba(255, 105, 180, 0.25);
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             cursor: pointer;
             transition: all 0.3s ease;
             text-decoration: none;
@@ -83,17 +83,7 @@
             font-weight: 500;
             letter-spacing: 0.5px;
             border: 1px solid rgba(255, 240, 245, 0.3);
-            font-size: 14px;
-        }
-
-        @media (min-width: 768px) {
-            .youtube-button {
-                top: 20px;
-                right: 20px;
-                padding: 12px 28px;
-                font-size: 16px;
-                gap: 12px;
-            }
+            font-size: 13px;
         }
 
         .youtube-button:hover {
@@ -103,69 +93,42 @@
         }
 
         .youtube-button i {
-            font-size: 18px;
+            font-size: 16px;
             color: #fff0f5;
-        }
-
-        @media (min-width: 768px) {
-            .youtube-button i {
-                font-size: 22px;
-            }
         }
 
         .tabs {
             display: flex;
             background: linear-gradient(135deg, #ffc0cb 0%, #ffb6c1 100%);
-            padding: 15px 15px 0 15px;
-            gap: 8px;
+            padding: 15px 10px 0 10px;
+            gap: 5px;
             flex-wrap: wrap;
             justify-content: center;
         }
 
-        @media (min-width: 768px) {
-            .tabs {
-                padding: 25px 25px 0 25px;
-                gap: 12px;
-            }
-        }
-
         .tab {
-            padding: 10px 16px;
+            padding: 10px 12px;
             background: rgba(255, 240, 245, 0.3);
-            border-radius: 25px 25px 0 0;
+            border-radius: 20px 20px 0 0;
             color: #8b3a62;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 4px;
             border: none;
-            font-size: 14px;
+            font-size: 13px;
             backdrop-filter: blur(4px);
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
             border-bottom: 2px solid transparent;
             white-space: nowrap;
-        }
-
-        @media (min-width: 768px) {
-            .tab {
-                padding: 16px 32px;
-                font-size: 17px;
-                gap: 10px;
-                letter-spacing: 0.7px;
-            }
+            flex: 0 1 auto;
         }
 
         .tab i {
-            font-size: 14px;
+            font-size: 12px;
             color: #b24b73;
-        }
-
-        @media (min-width: 768px) {
-            .tab i {
-                font-size: 18px;
-            }
         }
 
         .tab:hover {
@@ -186,16 +149,9 @@
         }
 
         .tab-content {
-            padding: 20px;
-            min-height: 450px;
+            padding: 15px;
+            min-height: auto;
             background: #fff0f5;
-        }
-
-        @media (min-width: 768px) {
-            .tab-content {
-                padding: 35px;
-                min-height: 550px;
-            }
         }
 
         .tab-pane {
@@ -212,37 +168,24 @@
             to { opacity: 1; transform: translateX(0); }
         }
 
+        /* Стили для телефона - фото в столбик */
         .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 15px;
             margin-top: 15px;
         }
 
-        @media (min-width: 768px) {
-            .gallery-grid {
-                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-                gap: 25px;
-                margin-top: 25px;
-            }
-        }
-
         .gallery-item {
             position: relative;
-            border-radius: 20px;
+            border-radius: 25px;
             overflow: hidden;
             box-shadow: 0 12px 25px rgba(255, 105, 180, 0.2);
             transition: all 0.3s ease;
             cursor: pointer;
             aspect-ratio: 1 / 1;
             border: 2px solid #ffe4ec;
-        }
-
-        @media (min-width: 768px) {
-            .gallery-item {
-                border-radius: 28px;
-                border: 3px solid #ffe4ec;
-            }
+            width: 100%;
         }
 
         .gallery-item:hover {
@@ -265,39 +208,35 @@
             right: 0;
             background: linear-gradient(to top, rgba(255, 105, 180, 0.85), transparent);
             color: #fff0f5;
-            padding: 10px;
+            padding: 15px;
             transform: translateY(100%);
             transition: transform 0.3s ease;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 500;
             text-align: center;
             letter-spacing: 0.5px;
             backdrop-filter: blur(2px);
         }
 
-        @media (min-width: 768px) {
-            .gallery-item .overlay {
-                padding: 20px;
-                font-size: 22px;
-                letter-spacing: 1px;
-            }
-        }
-
         .gallery-item:hover .overlay {
             transform: translateY(0);
         }
 
-        .love-notes {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
+        /* На телефоне overlay виден всегда для удобства */
+        @media (max-width: 768px) {
+            .gallery-item .overlay {
+                transform: translateY(0);
+                background: linear-gradient(to top, rgba(255, 105, 180, 0.9), rgba(255, 105, 180, 0.4));
+                padding: 12px;
+                font-size: 16px;
+            }
         }
 
-        @media (min-width: 768px) {
-            .love-notes {
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-                gap: 25px;
-            }
+        /* Признания в столбик */
+        .love-notes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
 
         .note-card {
@@ -310,13 +249,7 @@
             border: 2px solid rgba(255, 182, 193, 0.3);
             cursor: pointer;
             text-align: center;
-        }
-
-        @media (min-width: 768px) {
-            .note-card {
-                padding: 28px;
-                border-radius: 35px;
-            }
+            width: 100%;
         }
 
         .note-card:hover {
@@ -328,30 +261,15 @@
         .note-card i {
             font-size: 30px;
             color: #ff69b4;
-            margin-bottom: 12px;
-        }
-
-        @media (min-width: 768px) {
-            .note-card i {
-                font-size: 38px;
-                margin-bottom: 18px;
-            }
+            margin-bottom: 10px;
         }
 
         .note-card p {
             font-size: 16px;
             line-height: 1.5;
             color: #8b3a62;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             font-weight: 500;
-        }
-
-        @media (min-width: 768px) {
-            .note-card p {
-                font-size: 19px;
-                line-height: 1.6;
-                margin-bottom: 18px;
-            }
         }
 
         .note-card .emoji-row {
@@ -359,107 +277,58 @@
             letter-spacing: 4px;
         }
 
-        @media (min-width: 768px) {
-            .note-card .emoji-row {
-                font-size: 30px;
-                letter-spacing: 8px;
-            }
-        }
-
         .message-section {
             text-align: center;
-            padding: 25px;
+            padding: 20px;
             background: linear-gradient(135deg, #ffe4ec 0%, #ffd9e8 100%);
-            border-radius: 30px;
+            border-radius: 25px;
             margin-top: 15px;
             border: 2px solid #ffe4ec;
         }
 
-        @media (min-width: 768px) {
-            .message-section {
-                padding: 45px;
-                border-radius: 50px;
-                margin-top: 20px;
-            }
-        }
-
         .message-section h2 {
-            font-size: 28px;
+            font-size: 24px;
             color: #b24b73;
             margin-bottom: 15px;
             font-weight: 600;
             letter-spacing: 0.5px;
         }
 
-        @media (min-width: 768px) {
-            .message-section h2 {
-                font-size: 44px;
-                margin-bottom: 30px;
-                letter-spacing: 1px;
-            }
-        }
-
         .message-section p {
-            font-size: 16px;
+            font-size: 15px;
             color: #8b3a62;
-            margin: 15px 0;
+            margin: 12px 0;
             line-height: 1.6;
         }
 
-        @media (min-width: 768px) {
-            .message-section p {
-                font-size: 22px;
-                margin: 22px 0;
-                line-height: 1.8;
-            }
-        }
-
         .big-emoji {
-            font-size: 40px;
-            margin: 20px 0;
+            font-size: 35px;
+            margin: 15px 0;
             animation: bounce 2.2s infinite;
-        }
-
-        @media (min-width: 768px) {
-            .big-emoji {
-                font-size: 65px;
-                margin: 35px 0;
-            }
         }
 
         @keyframes bounce {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-18px); }
+            50% { transform: translateY(-15px); }
         }
 
         .surprise-button {
             background: linear-gradient(135deg, #ffb6c1 0%, #ff9eb5 100%);
             color: #fff0f5;
             border: none;
-            padding: 12px 30px;
+            padding: 12px 25px;
             font-size: 18px;
-            border-radius: 50px;
+            border-radius: 40px;
             cursor: pointer;
             transition: all 0.3s ease;
-            margin: 20px 0 15px;
+            margin: 15px 0 10px;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             font-weight: 500;
             box-shadow: 0 15px 30px rgba(255, 105, 180, 0.25);
             letter-spacing: 0.5px;
             border: 2px solid rgba(255, 240, 245, 0.4);
-        }
-
-        @media (min-width: 768px) {
-            .surprise-button {
-                padding: 18px 48px;
-                font-size: 24px;
-                border-radius: 70px;
-                margin: 30px 0 20px;
-                gap: 15px;
-                letter-spacing: 1px;
-            }
         }
 
         .surprise-button:hover {
@@ -470,15 +339,8 @@
 
         .floating-hearts {
             position: relative;
-            height: 60px;
+            height: 50px;
             margin: 10px 0;
-        }
-
-        @media (min-width: 768px) {
-            .floating-hearts {
-                height: 100px;
-                margin: 20px 0;
-            }
         }
 
         .floating-hearts i {
@@ -488,15 +350,9 @@
             font-size: 18px;
         }
 
-        @media (min-width: 768px) {
-            .floating-hearts i {
-                font-size: 24px;
-            }
-        }
-
         @keyframes floatHeart {
             0% { transform: translateY(0) scale(1); opacity: 0.8; }
-            100% { transform: translateY(-60px) scale(1.3); opacity: 0; }
+            100% { transform: translateY(-50px) scale(1.3); opacity: 0; }
         }
 
         .modal {
@@ -520,20 +376,13 @@
         .modal-content {
             background: #fff0f5;
             padding: 25px;
-            border-radius: 40px;
+            border-radius: 35px;
             text-align: center;
-            max-width: 90%;
+            width: 100%;
+            max-width: 350px;
             animation: modalPop 0.35s ease;
             box-shadow: 0 30px 50px rgba(255, 105, 180, 0.25);
             border: 3px solid #ffe4ec;
-        }
-
-        @media (min-width: 768px) {
-            .modal-content {
-                padding: 45px;
-                border-radius: 60px;
-                max-width: 450px;
-            }
         }
 
         @keyframes modalPop {
@@ -542,43 +391,22 @@
         }
 
         .modal-content i {
-            font-size: 50px;
+            font-size: 45px;
             color: #ff69b4;
             margin: 10px 0;
         }
 
-        @media (min-width: 768px) {
-            .modal-content i {
-                font-size: 75px;
-                margin: 20px 0;
-            }
-        }
-
         .modal-content h2 {
-            font-size: 28px;
+            font-size: 26px;
             color: #b24b73;
             margin: 10px 0;
             font-weight: 600;
-        }
-
-        @media (min-width: 768px) {
-            .modal-content h2 {
-                font-size: 38px;
-                margin: 20px 0;
-            }
         }
 
         .modal-content p {
             font-size: 18px;
             color: #8b3a62;
             line-height: 1.5;
-        }
-
-        @media (min-width: 768px) {
-            .modal-content p {
-                font-size: 24px;
-                line-height: 1.6;
-            }
         }
 
         .close-modal {
@@ -595,39 +423,37 @@
             letter-spacing: 0.5px;
         }
 
-        @media (min-width: 768px) {
-            .close-modal {
-                padding: 14px 40px;
-                border-radius: 40px;
-                font-size: 19px;
-                margin-top: 25px;
-                letter-spacing: 0.7px;
-            }
-        }
-
         .close-modal:hover {
             background: #ff9eb5;
             transform: scale(1.05);
         }
 
         h2 i {
-            margin-right: 8px;
+            margin-right: 6px;
         }
 
-        @media (max-width: 480px) {
+        /* Для очень маленьких экранов */
+        @media (max-width: 380px) {
             .tab {
-                padding: 8px 12px;
-                font-size: 13px;
+                padding: 8px 8px;
+                font-size: 11px;
             }
             
-            .gallery-grid {
-                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-                gap: 10px;
+            .tab i {
+                font-size: 10px;
             }
             
             .gallery-item .overlay {
                 font-size: 14px;
-                padding: 8px;
+                padding: 10px;
+            }
+            
+            .message-section h2 {
+                font-size: 20px;
+            }
+            
+            .message-section p {
+                font-size: 14px;
             }
         }
     </style>
@@ -658,7 +484,7 @@
 
         <div class="tab-content">
             <div class="tab-pane active" id="gallery">
-                <h2 style="color: #b24b73; margin-bottom: 15px; text-align: center; font-size: 24px;">
+                <h2 style="color: #b24b73; margin-bottom: 15px; text-align: center; font-size: 22px;">
                     <i class="fas fa-camera"></i> Наши особенные кадры
                 </h2>
                 <div class="gallery-grid">
@@ -720,7 +546,7 @@
             </div>
 
             <div class="tab-pane" id="love">
-                <h2 style="color: #b24b73; margin-bottom: 15px; text-align: center; font-size: 24px;">
+                <h2 style="color: #b24b73; margin-bottom: 15px; text-align: center; font-size: 22px;">
                     <i class="fas fa-heartbeat"></i> Нажми на послания ❤️
                 </h2>
                 <div class="love-notes">
@@ -760,7 +586,7 @@
             <div class="tab-pane" id="messages">
                 <div class="message-section">
                     <h2>💌 Моему любимому 💌</h2>
-                    <i class="fas fa-heart" style="font-size: 40px; color: #ff69b4; margin: 15px;"></i>
+                    <i class="fas fa-heart" style="font-size: 35px; color: #ff69b4; margin: 10px;"></i>
                     <p>Владислав,</p>
                     <p>Каждый день с тобой — это особенное чудо. Ты делаешь мой мир ярче, теплее и счастливее. Спасибо тебе за твою заботу, нежность и бесконечную любовь.</p>
                     <p>Ты — самый удивительный человек в моей жизни, и я бесконечно благодарна судьбе за нашу встречу. Рядом с тобой я чувствую себя любимой и защищенной.</p>
@@ -770,7 +596,7 @@
                         💖 🥰 💕 😘 💗
                     </div>
                     <p>С днём рождения, мой любименький! 🎉</p>
-                    <p style="font-size: 24px;">Навсегда с тобой ❤️</p>
+                    <p style="font-size: 22px;">Навсегда с тобой ❤️</p>
                 </div>
             </div>
 
@@ -781,9 +607,9 @@
                     <div class="big-emoji">
                         🎈 💝 🎁 💖 🎈
                     </div>
-                    <p style="font-size: 20px;">Ты — самый лучший парень на свете!</p>
-                    <p style="font-size: 18px; font-style: italic; color: #b24b73;">Я приготовила для тебя особенное послание:</p>
-                    <p style="font-size: 22px; font-weight: 600; color: #b24b73; margin: 20px; background: white; padding: 15px; border-radius: 40px; border: 2px solid #ffb6c1;">
+                    <p style="font-size: 18px;">Ты — самый лучший парень на свете!</p>
+                    <p style="font-size: 16px; font-style: italic; color: #b24b73;">Я приготовила для тебя особенное послание:</p>
+                    <p style="font-size: 20px; font-weight: 600; color: #b24b73; margin: 15px; background: white; padding: 12px; border-radius: 30px; border: 2px solid #ffb6c1;">
                         "Спасибо, что ты есть у меня!"
                     </p>
                     <button class="surprise-button" onclick="createRainbowHearts()">
@@ -800,7 +626,7 @@
             <i class="fas fa-heart"></i>
             <h2>Я ТЕБЯ ЛЮБЛЮ</h2>
             <p id="modalMessage">❤️</p>
-            <div style="font-size: 35px; margin: 15px 0;">
+            <div style="font-size: 30px; margin: 10px 0;">
                 💖 💗 💓 💕 💘
             </div>
             <button class="close-modal" onclick="closeLoveModal()">Закрыть</button>
