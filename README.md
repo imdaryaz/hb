@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -62,39 +63,6 @@
         @keyframes fadeIn {
             from { opacity: 0; transform: scale(0.95); }
             to { opacity: 1; transform: scale(1); }
-        }
-
-        .youtube-button {
-            position: absolute;
-            top: 12px;
-            right: 12px;
-            z-index: 10;
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(8px);
-            padding: 8px 18px;
-            border-radius: 40px;
-            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: #b24b73;
-            font-weight: 500;
-            font-size: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.6);
-        }
-
-        .youtube-button i {
-            font-size: 16px;
-            color: #ff4d4d;
-        }
-
-        .youtube-button:hover {
-            background: rgba(255, 255, 255, 0.5);
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
         }
 
         .tabs {
@@ -317,6 +285,36 @@
             box-shadow: 0 10px 20px rgba(255, 105, 180, 0.4);
         }
 
+        .youtube-button {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8px);
+            padding: 12px 25px;
+            border-radius: 40px;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #b24b73;
+            font-weight: 500;
+            font-size: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            margin-top: 20px;
+        }
+
+        .youtube-button i {
+            font-size: 18px;
+            color: #ff4d4d;
+        }
+
+        .youtube-button:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
+        }
+
         .floating-hearts {
             position: relative;
             height: 60px;
@@ -438,11 +436,6 @@
     <div class="heart-bg" id="heartBg"></div>
 
     <div class="container">
-        <a href="https://youtu.be/oeLvR-JtDRE?si=L6-DldGyUg0auVVZ" target="_blank" class="youtube-button">
-            <i class="fab fa-youtube"></i>
-            <span>🎵 наша песня</span>
-        </a>
-
         <div class="tabs">
             <button class="tab active" onclick="switchTab('gallery')">
                 <i class="fas fa-camera-retro"></i> Фото
@@ -591,6 +584,11 @@
                     <button class="surprise-button" onclick="createRainbowHearts()">
                         <i class="fas fa-heart"></i> Нажми на удачу
                     </button>
+                    
+                    <a href="https://youtu.be/oeLvR-JtDRE?si=L6-DldGyUg0auVVZ" target="_blank" class="youtube-button">
+                        <i class="fab fa-youtube"></i>
+                        <span>🎵 наша песня</span>
+                    </a>
                 </div>
             </div>
         </div>
