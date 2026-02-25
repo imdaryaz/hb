@@ -18,7 +18,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 8px;
+            padding: 10px;
             position: relative;
             overflow-x: hidden;
         }
@@ -35,7 +35,7 @@
 
         .heart-bg i {
             position: absolute;
-            color: rgba(255, 105, 180, 0.2);
+            color: rgba(255, 105, 180, 0.15);
             animation: float 8s ease-in-out infinite;
             font-size: 20px;
         }
@@ -46,102 +46,89 @@
         }
 
         .container {
-            width: 1200px;
-            max-width: 100%;
-            background: rgba(255, 245, 250, 0.97);
-            backdrop-filter: blur(8px);
-            border-radius: 30px;
-            box-shadow: 0 30px 60px rgba(255, 105, 180, 0.25);
+            width: 100%;
+            max-width: 500px;
+            background: rgba(255, 245, 250, 0.98);
+            backdrop-filter: blur(10px);
+            border-radius: 35px;
+            box-shadow: 0 25px 50px rgba(255, 105, 180, 0.3);
             overflow: hidden;
             position: relative;
             z-index: 1;
-            animation: fadeIn 1.2s ease;
-            border: 1px solid rgba(255, 182, 193, 0.5);
+            animation: fadeIn 1s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.92); }
+            from { opacity: 0; transform: scale(0.95); }
             to { opacity: 1; transform: scale(1); }
         }
 
         .youtube-button {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 12px;
+            right: 12px;
             z-index: 10;
             background: #ff69b4;
-            padding: 8px 16px;
-            border-radius: 30px;
-            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.25);
+            padding: 8px 18px;
+            border-radius: 40px;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
             display: flex;
             align-items: center;
             gap: 6px;
             cursor: pointer;
             transition: all 0.3s ease;
             text-decoration: none;
-            color: #fff0f5;
+            color: white;
             font-weight: 500;
-            letter-spacing: 0.5px;
-            border: 1px solid rgba(255, 240, 245, 0.3);
-            font-size: 13px;
-        }
-
-        .youtube-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 12px 30px rgba(255, 105, 180, 0.35);
-            background: #ff1493;
+            font-size: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(5px);
         }
 
         .youtube-button i {
             font-size: 16px;
-            color: #fff0f5;
         }
 
         .tabs {
             display: flex;
-            background: linear-gradient(135deg, #ffc0cb 0%, #ffb6c1 100%);
-            padding: 15px 10px 0 10px;
+            background: linear-gradient(135deg, #ffb6c1 0%, #ff9eb5 100%);
+            padding: 20px 15px 0 15px;
             gap: 5px;
             flex-wrap: wrap;
             justify-content: center;
         }
 
         .tab {
-            padding: 10px 12px;
-            background: rgba(255, 240, 245, 0.3);
-            border-radius: 20px 20px 0 0;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 25px 25px 0 0;
             color: #8b3a62;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 5px;
             border: none;
-            font-size: 13px;
-            backdrop-filter: blur(4px);
-            letter-spacing: 0.3px;
+            font-size: 14px;
+            backdrop-filter: blur(5px);
             border-bottom: 2px solid transparent;
-            white-space: nowrap;
-            flex: 0 1 auto;
+            flex: 1;
+            justify-content: center;
+            min-width: auto;
         }
 
         .tab i {
-            font-size: 12px;
+            font-size: 13px;
             color: #b24b73;
-        }
-
-        .tab:hover {
-            background: rgba(255, 240, 245, 0.5);
-            transform: translateY(-3px);
-            border-bottom-color: #ff8da1;
         }
 
         .tab.active {
-            background: #fff0f5;
+            background: white;
             color: #b24b73;
-            box-shadow: 0 -8px 20px rgba(255, 105, 180, 0.1);
-            border-bottom: 2px solid #ff8da1;
+            border-bottom: 2px solid #ff69b4;
+            box-shadow: 0 -5px 15px rgba(255, 105, 180, 0.1);
         }
 
         .tab.active i {
@@ -149,49 +136,58 @@
         }
 
         .tab-content {
-            padding: 15px;
-            min-height: auto;
-            background: #fff0f5;
+            padding: 20px 15px;
+            background: white;
         }
 
         .tab-pane {
             display: none;
-            animation: slideIn 0.5s ease;
+            animation: fadeInPane 0.4s ease;
         }
 
         .tab-pane.active {
             display: block;
         }
 
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateX(15px); }
-            to { opacity: 1; transform: translateX(0); }
+        @keyframes fadeInPane {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Стили для телефона - фото в столбик */
+        /* Заголовки */
+        .section-title {
+            color: #b24b73;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .section-title i {
+            color: #ff69b4;
+        }
+
+        /* Галерея - вертикальная */
         .gallery-grid {
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            margin-top: 15px;
+            gap: 20px;
         }
 
         .gallery-item {
             position: relative;
             border-radius: 25px;
             overflow: hidden;
-            box-shadow: 0 12px 25px rgba(255, 105, 180, 0.2);
-            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.2);
             cursor: pointer;
-            aspect-ratio: 1 / 1;
-            border: 2px solid #ffe4ec;
-            width: 100%;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.02);
-            box-shadow: 0 18px 35px rgba(255, 105, 180, 0.3);
-            border-color: #ffb6c1;
+            aspect-ratio: 1/1;
+            border: 3px solid white;
+            transition: all 0.3s ease;
         }
 
         .gallery-item img {
@@ -206,33 +202,20 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(to top, rgba(255, 105, 180, 0.85), transparent);
-            color: #fff0f5;
-            padding: 15px;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-            font-size: 18px;
+            background: linear-gradient(to top, rgba(255, 105, 180, 0.9), rgba(255, 105, 180, 0.3));
+            color: white;
+            padding: 20px;
+            font-size: 20px;
             font-weight: 500;
             text-align: center;
-            letter-spacing: 0.5px;
             backdrop-filter: blur(2px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
 
-        .gallery-item:hover .overlay {
-            transform: translateY(0);
-        }
-
-        /* На телефоне overlay виден всегда для удобства */
-        @media (max-width: 768px) {
-            .gallery-item .overlay {
-                transform: translateY(0);
-                background: linear-gradient(to top, rgba(255, 105, 180, 0.9), rgba(255, 105, 180, 0.4));
-                padding: 12px;
-                font-size: 16px;
-            }
-        }
-
-        /* Признания в столбик */
+        /* Признания - вертикальные */
         .love-notes {
             display: flex;
             flex-direction: column;
@@ -241,70 +224,66 @@
 
         .note-card {
             background: linear-gradient(135deg, #ffe4ec 0%, #ffd9e8 100%);
-            padding: 20px;
-            border-radius: 25px;
-            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.15);
-            position: relative;
-            transition: all 0.3s ease;
-            border: 2px solid rgba(255, 182, 193, 0.3);
+            padding: 25px;
+            border-radius: 30px;
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.15);
+            border: 2px solid rgba(255, 182, 193, 0.4);
             cursor: pointer;
             text-align: center;
-            width: 100%;
+            transition: all 0.3s ease;
         }
 
-        .note-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 15px 35px rgba(255, 105, 180, 0.25);
-            border-color: #ffb6c1;
+        .note-card:active {
+            transform: scale(0.98);
+            background: linear-gradient(135deg, #ffd9e8 0%, #ffc0cb 100%);
         }
 
         .note-card i {
-            font-size: 30px;
+            font-size: 35px;
             color: #ff69b4;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .note-card p {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 1.5;
             color: #8b3a62;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             font-weight: 500;
         }
 
         .note-card .emoji-row {
-            font-size: 24px;
-            letter-spacing: 4px;
+            font-size: 28px;
+            letter-spacing: 6px;
         }
 
+        /* Письмо */
         .message-section {
             text-align: center;
-            padding: 20px;
+            padding: 25px 20px;
             background: linear-gradient(135deg, #ffe4ec 0%, #ffd9e8 100%);
-            border-radius: 25px;
-            margin-top: 15px;
-            border: 2px solid #ffe4ec;
+            border-radius: 35px;
+            border: 2px solid rgba(255, 182, 193, 0.4);
         }
 
         .message-section h2 {
-            font-size: 24px;
+            font-size: 26px;
             color: #b24b73;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             font-weight: 600;
-            letter-spacing: 0.5px;
         }
 
         .message-section p {
-            font-size: 15px;
+            font-size: 17px;
             color: #8b3a62;
-            margin: 12px 0;
-            line-height: 1.6;
+            margin: 15px 0;
+            line-height: 1.7;
         }
 
         .big-emoji {
-            font-size: 35px;
-            margin: 15px 0;
-            animation: bounce 2.2s infinite;
+            font-size: 40px;
+            margin: 20px 0;
+            animation: bounce 2s infinite;
         }
 
         @keyframes bounce {
@@ -312,49 +291,49 @@
             50% { transform: translateY(-15px); }
         }
 
+        /* Сюрприз */
         .surprise-button {
-            background: linear-gradient(135deg, #ffb6c1 0%, #ff9eb5 100%);
-            color: #fff0f5;
+            background: linear-gradient(135deg, #ff69b4 0%, #ff4d8c 100%);
+            color: white;
             border: none;
-            padding: 12px 25px;
-            font-size: 18px;
-            border-radius: 40px;
+            padding: 16px 35px;
+            font-size: 20px;
+            border-radius: 50px;
             cursor: pointer;
             transition: all 0.3s ease;
-            margin: 15px 0 10px;
+            margin: 20px 0 10px;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             font-weight: 500;
-            box-shadow: 0 15px 30px rgba(255, 105, 180, 0.25);
-            letter-spacing: 0.5px;
-            border: 2px solid rgba(255, 240, 245, 0.4);
+            box-shadow: 0 15px 30px rgba(255, 105, 180, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.3);
         }
 
-        .surprise-button:hover {
-            transform: scale(1.08);
-            box-shadow: 0 20px 40px rgba(255, 105, 180, 0.35);
-            background: linear-gradient(135deg, #ff9eb5 0%, #ff8da1 100%);
+        .surprise-button:active {
+            transform: scale(0.95);
+            box-shadow: 0 10px 20px rgba(255, 105, 180, 0.4);
         }
 
         .floating-hearts {
             position: relative;
-            height: 50px;
-            margin: 10px 0;
+            height: 60px;
+            margin: 15px 0;
         }
 
         .floating-hearts i {
             position: absolute;
             color: #ff69b4;
-            animation: floatHeart 3.5s ease-in-out infinite;
-            font-size: 18px;
+            animation: floatHeart 3s ease-in-out infinite;
+            font-size: 20px;
         }
 
         @keyframes floatHeart {
             0% { transform: translateY(0) scale(1); opacity: 0.8; }
-            100% { transform: translateY(-50px) scale(1.3); opacity: 0; }
+            100% { transform: translateY(-50px) scale(1.2); opacity: 0; }
         }
 
+        /* Модальное окно */
         .modal {
             display: none;
             position: fixed;
@@ -362,11 +341,12 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(255, 182, 193, 0.3);
-            z-index: 1000;
+            background: rgba(255, 105, 180, 0.3);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
             justify-content: center;
             align-items: center;
-            padding: 15px;
+            padding: 20px;
         }
 
         .modal.active {
@@ -374,86 +354,82 @@
         }
 
         .modal-content {
-            background: #fff0f5;
-            padding: 25px;
-            border-radius: 35px;
+            background: white;
+            padding: 35px 25px;
+            border-radius: 50px;
             text-align: center;
             width: 100%;
-            max-width: 350px;
-            animation: modalPop 0.35s ease;
-            box-shadow: 0 30px 50px rgba(255, 105, 180, 0.25);
+            max-width: 380px;
+            animation: modalPop 0.3s ease;
+            box-shadow: 0 30px 50px rgba(255, 105, 180, 0.3);
             border: 3px solid #ffe4ec;
         }
 
         @keyframes modalPop {
-            from { transform: scale(0.85); opacity: 0; }
+            from { transform: scale(0.9); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
         }
 
         .modal-content i {
-            font-size: 45px;
+            font-size: 60px;
             color: #ff69b4;
             margin: 10px 0;
         }
 
         .modal-content h2 {
-            font-size: 26px;
+            font-size: 30px;
             color: #b24b73;
-            margin: 10px 0;
-            font-weight: 600;
+            margin: 15px 0;
         }
 
         .modal-content p {
-            font-size: 18px;
+            font-size: 22px;
             color: #8b3a62;
             line-height: 1.5;
+            margin: 15px 0;
         }
 
         .close-modal {
             background: #ffb6c1;
-            color: #fff0f5;
+            color: white;
             border: none;
-            padding: 10px 25px;
-            border-radius: 30px;
-            font-size: 16px;
+            padding: 12px 35px;
+            border-radius: 40px;
+            font-size: 18px;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 20px;
             transition: all 0.3s ease;
-            border: 2px solid rgba(255, 240, 245, 0.4);
-            letter-spacing: 0.5px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            font-weight: 500;
         }
 
-        .close-modal:hover {
+        .close-modal:active {
+            transform: scale(0.95);
             background: #ff9eb5;
-            transform: scale(1.05);
-        }
-
-        h2 i {
-            margin-right: 6px;
         }
 
         /* Для очень маленьких экранов */
         @media (max-width: 380px) {
             .tab {
-                padding: 8px 8px;
-                font-size: 11px;
+                font-size: 12px;
+                padding: 8px 10px;
             }
             
-            .tab i {
-                font-size: 10px;
-            }
-            
-            .gallery-item .overlay {
-                font-size: 14px;
-                padding: 10px;
-            }
-            
-            .message-section h2 {
+            .section-title {
                 font-size: 20px;
             }
             
-            .message-section p {
-                font-size: 14px;
+            .gallery-item .overlay {
+                font-size: 18px;
+                padding: 15px;
+            }
+            
+            .note-card p {
+                font-size: 16px;
+            }
+            
+            .note-card .emoji-row {
+                font-size: 24px;
             }
         }
     </style>
@@ -464,12 +440,12 @@
     <div class="container">
         <a href="https://youtu.be/oeLvR-JtDRE?si=L6-DldGyUg0auVVZ" target="_blank" class="youtube-button">
             <i class="fab fa-youtube"></i>
-            <span>🎵 нажми</span>
+            <span>🎵 Слушать</span>
         </a>
 
         <div class="tabs">
             <button class="tab active" onclick="switchTab('gallery')">
-                <i class="fas fa-camera-retro"></i> Наши моменты
+                <i class="fas fa-camera-retro"></i> Фото
             </button>
             <button class="tab" onclick="switchTab('love')">
                 <i class="fas fa-heart"></i> Признания
@@ -483,9 +459,10 @@
         </div>
 
         <div class="tab-content">
+            <!-- Галерея -->
             <div class="tab-pane active" id="gallery">
-                <h2 style="color: #b24b73; margin-bottom: 15px; text-align: center; font-size: 22px;">
-                    <i class="fas fa-camera"></i> Наши особенные кадры
+                <h2 class="section-title">
+                    <i class="fas fa-camera"></i> Наши моменты
                 </h2>
                 <div class="gallery-grid">
                     <div class="gallery-item">
@@ -545,9 +522,10 @@
                 </div>
             </div>
 
+            <!-- Признания -->
             <div class="tab-pane" id="love">
-                <h2 style="color: #b24b73; margin-bottom: 15px; text-align: center; font-size: 22px;">
-                    <i class="fas fa-heartbeat"></i> Нажми на послания ❤️
+                <h2 class="section-title">
+                    <i class="fas fa-heartbeat"></i> Признания
                 </h2>
                 <div class="love-notes">
                     <div class="note-card" onclick="openLoveModal('Ты — моё счастье! ✨')">
@@ -577,16 +555,17 @@
                     </div>
                     <div class="note-card" onclick="openLoveModal('Ты — моя радость! 😊')">
                         <i class="fas fa-hand-holding-heart"></i>
-                        <p>Твоя улыбка - мой любимый момент</p>
+                        <p>Твоя улыбка — мой любимый момент</p>
                         <div class="emoji-row">🥰 💕 😘</div>
                     </div>
                 </div>
             </div>
 
+            <!-- Письмо -->
             <div class="tab-pane" id="messages">
                 <div class="message-section">
-                    <h2>💌 Моему любимому 💌</h2>
-                    <i class="fas fa-heart" style="font-size: 35px; color: #ff69b4; margin: 10px;"></i>
+                    <h2>💌 Моему любимому</h2>
+                    <i class="fas fa-heart" style="font-size: 45px; color: #ff69b4; margin: 10px;"></i>
                     <p>Владислав,</p>
                     <p>Каждый день с тобой — это особенное чудо. Ты делаешь мой мир ярче, теплее и счастливее. Спасибо тебе за твою заботу, нежность и бесконечную любовь.</p>
                     <p>Ты — самый удивительный человек в моей жизни, и я бесконечно благодарна судьбе за нашу встречу. Рядом с тобой я чувствую себя любимой и защищенной.</p>
@@ -596,37 +575,38 @@
                         💖 🥰 💕 😘 💗
                     </div>
                     <p>С днём рождения, мой любименький! 🎉</p>
-                    <p style="font-size: 22px;">Навсегда с тобой ❤️</p>
+                    <p style="font-size: 24px; margin-top: 20px;">Навсегда с тобой ❤️</p>
                 </div>
             </div>
 
+            <!-- Сюрприз -->
             <div class="tab-pane" id="surprise">
                 <div class="message-section" style="background: linear-gradient(135deg, #ffd9e8 0%, #ffc0cb 100%);">
-                    <h2>🎉 СЮРПРИЗ! 🎉</h2>
+                    <h2>🎉 СЮРПРИЗ!</h2>
                     <div class="floating-hearts" id="floatingHearts"></div>
                     <div class="big-emoji">
                         🎈 💝 🎁 💖 🎈
                     </div>
-                    <p style="font-size: 18px;">Ты — самый лучший парень на свете!</p>
-                    <p style="font-size: 16px; font-style: italic; color: #b24b73;">Я приготовила для тебя особенное послание:</p>
-                    <p style="font-size: 20px; font-weight: 600; color: #b24b73; margin: 15px; background: white; padding: 12px; border-radius: 30px; border: 2px solid #ffb6c1;">
+                    <p style="font-size: 20px;">Ты — самый лучший парень на свете!</p>
+                    <p style="font-size: 18px; font-style: italic; color: #b24b73;">Я приготовила для тебя особенное послание:</p>
+                    <p style="font-size: 22px; font-weight: 600; color: #b24b73; margin: 20px; background: white; padding: 15px; border-radius: 40px; border: 2px solid #ffb6c1;">
                         "Спасибо, что ты есть у меня!"
                     </p>
                     <button class="surprise-button" onclick="createRainbowHearts()">
                         <i class="fas fa-heart"></i> Нажми на удачу
                     </button>
-                    <div class="floating-hearts" id="surpriseHearts"></div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Модальное окно -->
     <div class="modal" id="loveModal">
         <div class="modal-content">
             <i class="fas fa-heart"></i>
             <h2>Я ТЕБЯ ЛЮБЛЮ</h2>
             <p id="modalMessage">❤️</p>
-            <div style="font-size: 30px; margin: 10px 0;">
+            <div style="font-size: 35px; margin: 15px 0;">
                 💖 💗 💓 💕 💘
             </div>
             <button class="close-modal" onclick="closeLoveModal()">Закрыть</button>
@@ -636,13 +616,13 @@
     <script>
         function createHearts() {
             const heartBg = document.getElementById('heartBg');
-            for (let i = 0; i < 35; i++) {
+            for (let i = 0; i < 30; i++) {
                 const heart = document.createElement('i');
                 heart.className = 'fas fa-heart';
                 heart.style.left = Math.random() * 100 + '%';
                 heart.style.top = Math.random() * 100 + '%';
-                heart.style.animationDelay = Math.random() * 6 + 's';
-                heart.style.fontSize = (Math.random() * 25 + 15) + 'px';
+                heart.style.animationDelay = Math.random() * 5 + 's';
+                heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
                 heartBg.appendChild(heart);
             }
         }
@@ -660,12 +640,12 @@
 
         function openLoveModal(message) {
             document.getElementById('loveModal').classList.add('active');
-            document.getElementById('modalMessage').innerHTML = message + '<br>❤️';
+            document.getElementById('modalMessage').innerHTML = message;
             
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < 15; i++) {
                 setTimeout(() => {
                     createFloatingHeart();
-                }, i * 70);
+                }, i * 80);
             }
         }
 
@@ -680,19 +660,19 @@
             heart.style.left = Math.random() * 100 + '%';
             heart.style.top = '50%';
             heart.style.color = '#ff69b4';
-            heart.style.fontSize = (Math.random() * 35 + 20) + 'px';
-            heart.style.zIndex = '1001';
-            heart.style.animation = 'floatHeart 2.2s ease-out forwards';
+            heart.style.fontSize = (Math.random() * 30 + 20) + 'px';
+            heart.style.zIndex = '2001';
+            heart.style.animation = 'floatHeart 2s ease-out forwards';
             document.body.appendChild(heart);
             
             setTimeout(() => {
                 heart.remove();
-            }, 2200);
+            }, 2000);
         }
 
         function createRainbowHearts() {
-            const colors = ['#ff69b4', '#ffb6c1', '#ff9eb5', '#ff8da1', '#ff7b9c'];
-            for (let i = 0; i < 25; i++) {
+            const colors = ['#ff69b4', '#ffb6c1', '#ff9eb5', '#ff8da1'];
+            for (let i = 0; i < 20; i++) {
                 setTimeout(() => {
                     const heart = document.createElement('i');
                     heart.className = 'fas fa-heart';
@@ -700,36 +680,33 @@
                     heart.style.left = Math.random() * 100 + '%';
                     heart.style.bottom = '0';
                     heart.style.color = colors[Math.floor(Math.random() * colors.length)];
-                    heart.style.fontSize = (Math.random() * 45 + 25) + 'px';
-                    heart.style.zIndex = '1001';
-                    heart.style.animation = 'floatHeart 2.8s ease-out forwards';
+                    heart.style.fontSize = (Math.random() * 40 + 25) + 'px';
+                    heart.style.zIndex = '2001';
+                    heart.style.animation = 'floatHeart 2.5s ease-out forwards';
                     document.body.appendChild(heart);
                     
                     setTimeout(() => {
                         heart.remove();
-                    }, 2800);
-                }, i * 100);
+                    }, 2500);
+                }, i * 120);
             }
             
-            alert('💖 Ты — мой самый любимый, милый, добрый, красивый, очаровательный человек! Спасибо, что ты у меня есть 💖');
+            alert('💖 Ты — мой самый любимый, милый, добрый, красивый, очаровательный человек! Спасибо, что ты есть у меня 💖');
         }
 
         window.onload = function() {
             createHearts();
             
-            const galleryItems = document.querySelectorAll('.gallery-item');
-            galleryItems.forEach((item, index) => {
+            document.querySelectorAll('.gallery-item').forEach(item => {
                 item.addEventListener('click', function() {
-                    const overlay = this.querySelector('.overlay').textContent;
-                    alert('❤️ ' + overlay + ' ❤️\nЭто наш особенный момент!');
+                    const text = this.querySelector('.overlay').textContent.trim();
+                    alert('❤️ ' + text + ' ❤️');
                 });
             });
         };
 
         document.getElementById('loveModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeLoveModal();
-            }
+            if (e.target === this) closeLoveModal();
         });
     </script>
 </body>
