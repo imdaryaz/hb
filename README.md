@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -472,6 +471,12 @@
                         <img src="7.jpg" alt="Наше место">
                         <div class="overlay">
                             <i class="fas fa-heart"></i> Наше место
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="8.jpg" alt="Моя лабубушечка">
+                        <div class="overlay">
+                            <i class="fas fa-heart"></i> Моя лабубушечка
                         </div>
                     </div>
                     <div class="gallery-item">
