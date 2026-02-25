@@ -69,25 +69,32 @@
             top: 12px;
             right: 12px;
             z-index: 10;
-            background: #ff69b4;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8px);
             padding: 8px 18px;
             border-radius: 40px;
-            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
             display: flex;
             align-items: center;
             gap: 6px;
             cursor: pointer;
             transition: all 0.3s ease;
             text-decoration: none;
-            color: white;
+            color: #b24b73;
             font-weight: 500;
             font-size: 14px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
         }
 
         .youtube-button i {
             font-size: 16px;
+            color: #ff4d4d;
+        }
+
+        .youtube-button:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
         }
 
         .tabs {
@@ -154,7 +161,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Заголовки */
         .section-title {
             color: #b24b73;
             margin-bottom: 20px;
@@ -172,7 +178,6 @@
             color: #ff69b4;
         }
 
-        /* Галерея - вертикальная */
         .gallery-grid {
             display: flex;
             flex-direction: column;
@@ -215,7 +220,6 @@
             gap: 8px;
         }
 
-        /* Признания - вертикальные */
         .love-notes {
             display: flex;
             flex-direction: column;
@@ -257,7 +261,6 @@
             letter-spacing: 6px;
         }
 
-        /* Письмо */
         .message-section {
             text-align: center;
             padding: 25px 20px;
@@ -291,7 +294,6 @@
             50% { transform: translateY(-15px); }
         }
 
-        /* Сюрприз */
         .surprise-button {
             background: linear-gradient(135deg, #ff69b4 0%, #ff4d8c 100%);
             color: white;
@@ -333,7 +335,6 @@
             100% { transform: translateY(-50px) scale(1.2); opacity: 0; }
         }
 
-        /* Модальное окно */
         .modal {
             display: none;
             position: fixed;
@@ -408,7 +409,6 @@
             background: #ff9eb5;
         }
 
-        /* Для очень маленьких экранов */
         @media (max-width: 380px) {
             .tab {
                 font-size: 12px;
@@ -440,7 +440,7 @@
     <div class="container">
         <a href="https://youtu.be/oeLvR-JtDRE?si=L6-DldGyUg0auVVZ" target="_blank" class="youtube-button">
             <i class="fab fa-youtube"></i>
-            <span>🎵 Слушать</span>
+            <span>🎵 наша песня</span>
         </a>
 
         <div class="tabs">
@@ -459,7 +459,6 @@
         </div>
 
         <div class="tab-content">
-            <!-- Галерея -->
             <div class="tab-pane active" id="gallery">
                 <h2 class="section-title">
                     <i class="fas fa-camera"></i> Наши моменты
@@ -522,7 +521,6 @@
                 </div>
             </div>
 
-            <!-- Признания -->
             <div class="tab-pane" id="love">
                 <h2 class="section-title">
                     <i class="fas fa-heartbeat"></i> Признания
@@ -561,7 +559,6 @@
                 </div>
             </div>
 
-            <!-- Письмо -->
             <div class="tab-pane" id="messages">
                 <div class="message-section">
                     <h2>💌 Моему любимому</h2>
@@ -579,7 +576,6 @@
                 </div>
             </div>
 
-            <!-- Сюрприз -->
             <div class="tab-pane" id="surprise">
                 <div class="message-section" style="background: linear-gradient(135deg, #ffd9e8 0%, #ffc0cb 100%);">
                     <h2>🎉 СЮРПРИЗ!</h2>
@@ -600,7 +596,6 @@
         </div>
     </div>
 
-    <!-- Модальное окно -->
     <div class="modal" id="loveModal">
         <div class="modal-content">
             <i class="fas fa-heart"></i>
@@ -691,7 +686,7 @@
                 }, i * 120);
             }
             
-            alert('💖 Ты — мой самый любимый, милый, добрый, красивый, очаровательный человек! Спасибо, что ты есть у меня 💖');
+            alert('💖 Ты — мой самый любимый, милый, добрый, красивый, очаровательный человек! Спасибо, что ты у меня есть 💖');
         }
 
         window.onload = function() {
