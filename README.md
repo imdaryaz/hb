@@ -459,55 +459,55 @@
                     <div class="gallery-item">
                         <img src="3.jpg" alt="Именинник">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Мое солнышко
+                            <i class="fas fa-heart"></i> Именинник
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="5.jpg" alt="Вместе">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Ляпота
+                            <i class="fas fa-heart"></i> Вместе
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="8.jpg" alt="Моя лабубушечка">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Ну что за мимими
+                            <i class="fas fa-heart"></i> Моя лабубушечка
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="7.jpg" alt="Наше место">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Жду, когда туда пойдем
+                            <i class="fas fa-heart"></i> Наше место
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="4.jpg" alt="Крайняя">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Надеюсь не последняя
+                            <i class="fas fa-heart"></i> Крайняя
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="1.jpg" alt="Чемпион">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Я в тебя верю
+                            <i class="fas fa-heart"></i> Чемпион
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="9.jpg" alt="Счастливы">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Ну типо
+                            <i class="fas fa-heart"></i> Счастливы
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="2.jpg" alt="Поцелуй">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Моя любимая фоточка
+                            <i class="fas fa-heart"></i> Поцелуй
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="6.jpg" alt="Мой милашка">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Ну реально милашечка моя сладкая
+                            <i class="fas fa-heart"></i> Мой милашка
                         </div>
                     </div>
                 </div>
@@ -553,7 +553,7 @@
 
             <div class="tab-pane" id="messages">
                 <div class="message-section">
-                    <h2>💌 Моему любимому 💌</h2>
+                    <h2>💌Моему любимому💌</h2>
                     <i class="fas fa-heart" style="font-size: 45px; color: #ff69b4; margin: 10px;"></i>
                     <p>Владислав,</p>
                     <p>Каждый день с тобой - это особенное чудо. Ты делаешь мой мир ярче, теплее и счастливее. Спасибо тебе за твою заботу, нежность и бесконечную любовь.</p>
