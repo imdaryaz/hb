@@ -459,55 +459,55 @@
                     <div class="gallery-item">
                         <img src="3.jpg" alt="Именинник">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Именинник
+                            <i class="fas fa-heart"></i> Мое солнышко
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="5.jpg" alt="Вместе">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Вместе
+                            <i class="fas fa-heart"></i> Ляпота
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="8.jpg" alt="Моя лабубушечка">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Моя лабубушечка
+                            <i class="fas fa-heart"></i> Ну что за мимими
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="7.jpg" alt="Наше место">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Наше место
+                            <i class="fas fa-heart"></i> Жду, когда туда пойдем
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="4.jpg" alt="Крайняя">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Крайняя
+                            <i class="fas fa-heart"></i> Надеюсь не последняя
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="1.jpg" alt="Чемпион">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Чемпион
+                            <i class="fas fa-heart"></i> Я в тебя верю
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="9.jpg" alt="Счастливы">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Счастливы
+                            <i class="fas fa-heart"></i> Ну типо
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="2.jpg" alt="Поцелуй">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Поцелуй
+                            <i class="fas fa-heart"></i> Моя любимая фоточка
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="6.jpg" alt="Мой милашка">
                         <div class="overlay">
-                            <i class="fas fa-heart"></i> Мой милашка
+                            <i class="fas fa-heart"></i> Ну реально милашечка моя сладкая
                         </div>
                     </div>
                 </div>
@@ -523,19 +523,19 @@
                         <p>Ты делаешь мою жизнь волшебной</p>
                         <div class="emoji-row">💕 💗 💓</div>
                     </div>
-                    <div class="note-card" onclick="openLoveModal('Ты — мой свет! ⭐')">
+                    <div class="note-card" onclick="openLoveModal('Ты делаешь мою жизнь незабываемой ⭐')">
                         <i class="fas fa-star"></i>
                         <p>С тобой каждый день особенный</p>
                         <div class="emoji-row">🌟 ✨ 💫</div>
                     </div>
-                    <div class="note-card" onclick="openLoveModal('Ты согреваешь меня! ☀️')">
+                    <div class="note-card" onclick="openLoveModal('Ты согреваешь меня, особенно ножки! ☀️')">
                         <i class="fas fa-sun"></i>
                         <p>Твоё тепло чувствую всегда</p>
                         <div class="emoji-row">🌞 💛 🥰</div>
                     </div>
                     <div class="note-card" onclick="openLoveModal('Ты мой герой! 👑')">
                         <i class="fas fa-crown"></i>
-                        <p>Для меня ты лучший</p>
+                        <p>Для меня ты самый лучший</p>
                         <div class="emoji-row">💖 👑 💘</div>
                     </div>
                     <div class="note-card" onclick="openLoveModal('Всегда с тобой! ♾️')">
@@ -543,7 +543,7 @@
                         <p>Наша любовь бесконечна</p>
                         <div class="emoji-row">💞 🌌 💫</div>
                     </div>
-                    <div class="note-card" onclick="openLoveModal('Ты — моя радость! 😊')">
+                    <div class="note-card" onclick="openLoveModal('Ты делаешь меня счастливее😊')">
                         <i class="fas fa-hand-holding-heart"></i>
                         <p>Твоя улыбка — мой любимый момент</p>
                         <div class="emoji-row">🥰 💕 😘</div>
@@ -553,7 +553,7 @@
 
             <div class="tab-pane" id="messages">
                 <div class="message-section">
-                    <h2>💌 Моему любимому</h2>
+                    <h2>💌 Моему любимому 💌</h2>
                     <i class="fas fa-heart" style="font-size: 45px; color: #ff69b4; margin: 10px;"></i>
                     <p>Владислав,</p>
                     <p>Каждый день с тобой - это особенное чудо. Ты делаешь мой мир ярче, теплее и счастливее. Спасибо тебе за твою заботу, нежность и бесконечную любовь.</p>
@@ -578,7 +578,7 @@
                     <p style="font-size: 20px;">Ты - самый лучший парень на свете!</p>
                     <p style="font-size: 18px; font-style: italic; color: #b24b73;">Я приготовила для тебя особенное послание:</p>
                     <p style="font-size: 22px; font-weight: 600; color: #b24b73; margin: 20px; background: white; padding: 15px; border-radius: 40px; border: 2px solid #ffb6c1;">
-                        "Спасибо, что ты есть у меня!"
+                        "Ты самый лучший человек в моей жизни, надеюсь, что ты останешься со мной хотя бы навсегда"
                     </p>
                     <button class="surprise-button" onclick="createRainbowHearts()">
                         <i class="fas fa-heart"></i> Нажми на удачу
@@ -596,7 +596,7 @@
     <div class="modal" id="loveModal">
         <div class="modal-content">
             <i class="fas fa-heart"></i>
-            <h2>Я ТЕБЯ ЛЮБЛЮ</h2>
+            <h2>Я ТЕБЯ ЛЮБЛЮ❤️</h2>
             <p id="modalMessage">❤️</p>
             <div style="font-size: 35px; margin: 15px 0;">
                 💖 💗 💓 💕 💘
